@@ -1,0 +1,6 @@
+<module rename-to='sendmailsample'>
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name="gwtupload.GWTUpload"/>
+  <entry-point class='gwtupload.sendmailsample.client.SendMailSample'/>
+  <stylesheet src="Upload.css"/>
+</module>

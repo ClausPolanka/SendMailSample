@@ -1,0 +1,27 @@
+<web-app>
+
+  <context-param>
+    <param-name>maxSize</param-name>
+    <param-value>3145728</param-value>
+  </context-param>
+  
+  <context-param>
+    <param-name>slowUploads</param-name>
+    <param-value>true</param-value>
+  </context-param>
+  
+  <servlet>
+    <servlet-name>sendMailServlet</servlet-name>
+    <servlet-class>gwtupload.sendmailsample.server.SendMailSampleServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>sendMailServlet</servlet-name>
+    <url-pattern>*.mail</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>SendMailSample.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
